@@ -1,0 +1,3 @@
+### Translate
+
+This project was meant to automate grabbing reddit posts and translating them many times for some reason. I remember it being pretty funny at the time, but the script unfortunately was broken by an issue with the translation library (https://github.com/lushan88a/google_trans_new/issues/62). I don't feel like fixing it but if you can put a new translation library in, it would work as normal. 

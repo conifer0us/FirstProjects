@@ -1,0 +1,1 @@
+csc /t:winexe /platform:anycpu /out:desktopform32.exe *.cs

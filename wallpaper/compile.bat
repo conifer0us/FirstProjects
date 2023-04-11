@@ -1,0 +1,1 @@
+csc /t:exe /out:desktopform.exe *.cs

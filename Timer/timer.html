@@ -1,0 +1,50 @@
+<html>
+<head>
+    <script>
+        async function startTimer() {
+            if (document.getElementById("timeLeft").innerHTML != 5) {
+		        return;
+	        }
+            let date = new Date(); 
+            time = date.getTime();  
+            intervalID = setInterval(function () {document.getElementById("timeLeft").innerHTML = (parseInt(document.getElementById("timeLeft").innerHTML) - 1) }, 1000);
+            char = await readKey();
+            let date2 = new Date();
+            time2 = date2.getTime(); 
+            window.clearInterval(intervalID); 
+            timediff = (time2 - time) / 1000; 
+            isEarly = timediff < 5;
+            document.getElementById("timeToPress").style.color = (isEarly ? 'red' : 'green');
+            document.getElementById("timeToPress").innerHTML = 'You Pressed the Button ' + Math.abs(timediff - 5) + (isEarly ? ' seconds early.' : ' seconds late.');
+            document.getElementById("resetbutton").style.display = '';
+        }
+        const readKey = () => new Promise(resolve => window.addEventListener('keypress', resolve, { once: true }));
+
+        function resetTimer() {
+            document.getElementById("timeLeft").innerHTML = 5; 
+            document.getElementById("timeToPress").innerHTML = '';
+            document.getElementById("resetbutton").style.display = 'none';
+        }
+    </script>
+</head>
+<body>
+    <h1>
+        Timing Test
+    </h1>
+    <button onclick="startTimer()">
+        Start The Timer
+    </button>
+    <p>
+        Time Left:
+    </p>
+    <h2 id="timeLeft">
+        5
+    </h2>
+    <h3 id="timeToPress">
+
+    </h3>
+    <button id="resetbutton" style="display:none;" onclick="resetTimer()">
+        Reset Timer
+    </button>
+</body>
+</html>
