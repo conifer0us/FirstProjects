@@ -1,0 +1,10 @@
+main: toebarn.com.mobChaos.Main
+name: MobChaos
+version: 1.0
+author: conifer0us
+description: A plugin that makes mobs chaotic in all sorts of ways.
+commands:
+  togglechaos: 
+    description: Turn on or off bizarre mob behavior. 
+    usage: /togglechaos
+    

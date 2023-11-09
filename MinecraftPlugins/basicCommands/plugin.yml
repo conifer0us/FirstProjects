@@ -1,0 +1,25 @@
+main: com.toebarn.basiccommands.Main
+name: Basic_Command_Pack
+version: 1.0
+author: conifer0us
+description: This plug-in contains a package of basic commands. 
+commands: 
+  launch: 
+    description: Apply a large upward velocity to a player. Only works on one player at a time.
+    usage: /launch <player>
+    permission: pluginpermission
+    permission-message: You do not have adequate permission to use that command.
+  heal: 
+    description: Restore all health and hunger to a player only works on one player at a time.
+    usage: /heal <player>
+    permission: pluginpermission
+    permission-message: You do not have adequate permission to use that command.
+  hea: 
+    description: DERPY DERP
+    usage: /figure it the fuck out
+  clearitems: 
+    description: Clears dropped items.
+    usage: /clearitems
+permissions:
+  pluginpermission: 
+    default: op

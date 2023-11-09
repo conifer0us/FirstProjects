@@ -1,0 +1,17 @@
+main: com.toebarn.mobfind.Main
+name: Mobfind
+version: 1.0
+author: conifer0us
+description: This plugin contains a game where you compete with a friend to see who can find different types of mobs faster.
+commands:
+  startmobfind: 
+    description: Start a mobfind game.
+    usage: /startmobfind (solo game) or /startmobfind <player> (to play with someone else)
+    permission: pluginpermission2
+    permission-message: You do not have adequate permission to use this command. 
+  mobfindrules: 
+    description: Display the rules to the mobfind game.
+    usage: /mobfindrules
+permissions:
+  pluginpermission2: 
+    default: op

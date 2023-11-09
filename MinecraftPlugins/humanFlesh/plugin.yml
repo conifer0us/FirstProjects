@@ -1,0 +1,6 @@
+main: ccimc.humanflesh.Main
+name: Villager_Flesh_Plugin
+version: 1.0
+api-version: 1.19
+author: conifer0us
+description: This plug-in ensures that villagers drop human flesh upon death. 

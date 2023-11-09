@@ -1,0 +1,22 @@
+main: com.toebarn.MCplugin.Main
+name: MobHunt
+version: 1.0
+author: conifer0us
+description: In this plug-in, you are going to kill your friends with mobs. 
+commands: 
+  startmobhunt: 
+    description: Start the mobhunt game with two players.
+    usage: /startmobhunt <player1> <player2> or /startmobhunt <player> (second player assumed to be you)
+    permission: pluginpermission1
+    permission-message: You do not have adequate permission to use that command. 
+  mobhuntrules: 
+    description: Displays the rules to mobhunt
+    usage: /mobhuntrules
+  stopmobhunt:
+    description: Stops an ongoing mobhunt game.
+    usage: /stopmobhunt
+    permission: pluginpermission1
+    permission-message: You do not have adequate permission to use that command. 
+permissions:
+  pluginpermission1: 
+    default: op

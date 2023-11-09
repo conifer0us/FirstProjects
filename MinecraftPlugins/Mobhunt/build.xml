@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<project name="mcplugin" default="makejar" basedir=".">
+    <target name="makejar" description="Create a jar for the project">
+        <jar destfile="C:\Users\cnfer\Server\plugins\${ant.project.name}.jar">
+            <fileset dir="C:\Users\cnfer\eclipse-workspace\mcplugin"></fileset>
+            <fileset file="plugin.yml"></fileset>
+        </jar>
+    </target>
+</project>
